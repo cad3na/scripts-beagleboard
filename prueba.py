@@ -2,10 +2,10 @@
 from Adafruit_BBIO import GPIO
 import time
 
-GPIO.setup("USR3", GPIO.OUT)
+GPIO.setup("P8_12", GPIO.OUT)
 
 for i in range(5):
-    GPIO.output("USR3", GPIO.HIGH)
+    GPIO.output("P8_12", GPIO.HIGH)
     time.sleep(1)
-    GPIO.output("USR3", GPIO.LOW)
+    GPIO.output("P8_12", GPIO.LOW)
     time.sleep(1)
